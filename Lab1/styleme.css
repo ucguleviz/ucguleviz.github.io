@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+    
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+li{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 15px;
+}
+h1 , h2 {
+    color: yellow;
+}
+a:hover {
+    background-color: yellow;
+  }

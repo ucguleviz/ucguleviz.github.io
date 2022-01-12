@@ -1,0 +1,33 @@
+h1,h2,h3,h4,h5,h6 {
+  color: #a4a400;
+  background-color: #f0f0f0;
+  font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+  font: 18px normal;
+  text-align: left;
+  text-decoration: underline;
+  letter-spacing: 0.25em;
+}
+h1 {
+  font: 22px bold;
+  text-align: center;
+}
+body {
+  background-color: white;
+  color: #404040;
+  font: 11px normal;
+  font-family: Georgia, Garamond, serif;
+  background-image: url("silverware.jpg");
+}
+a {
+  color: #a4a400;
+}
+blockquote {
+  font-style: italic;
+  background-color: #ffffa8;
+}
+.strike {
+  text-decoration: line-through;
+}
+ul {
+  list-style-image: url('pie_icon.gif');
+}
