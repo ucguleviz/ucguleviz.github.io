@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grade Checking</title>
+  </head>
+
+  <body>
+    <h1 style="color: blue;">Retrieve your grade</h1>
+    <form
+      id="student-form"
+      action="http://mumstudents.org/params.php"
+      method="post"
+    >
+      <label for="name">Name:</label>
+      <br>
+      <input type="text" id="sname" name="sname" value="" />
+      <br />
+      <br />
+      <label for="id">Student ID:</label>
+      <br>
+      <input type="text" id="sid" name="sid" value="" />
+      <br />
+      <br />
+      <label for="entryMonth">Your Entry</label>
+      <br />
+      <div id="entry">
+        <label>
+          <input type="radio" value="February" name="entry" />
+          February
+        </label>
+        <label>
+          <input type="radio" value="June" name="entry" />
+          May
+        </label>
+        <label>
+          <input type="radio" value="November" name="entry" />
+          November
+        </label>
+      </div>
+      <br />
+      <label for="assignment">Select the assignment to check your grade:</label>
+      <br />
+      <select name="assignment" id="assignment">
+        <option value=""></option>
+        <option value="Lab 0">Lab 0 - My Homepage Lab</option>
+        <option value="Lab 1">Lab 1 - About Me Lab</option>
+        <option value="Lab 2">Lab 2 - Grades Exercises Lab</option>
+        <option value="HW 1">HW 1 - Recipe</option>
+        <option value="HW 2">HW 2 - Movie Review</option>
+      </select>
+      <br />
+      <br />
+      <input type="checkbox" id="promise" name="promise" value="Marked" />
+      <label for="ownGrade">I will not look at other people's grades.</label>
+      <br />
+      <br />
+      <input type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
+<style>
+    label{
+        font-weight: bold;
+    }
+</style>
