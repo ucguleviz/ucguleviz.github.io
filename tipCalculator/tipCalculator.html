@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tip Calculator</title>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1>
+			<img id="logo" src="calc.jpg" alt="calculator" />
+			  Tip Calculator
+		</h1>
+		<div>
+			<label><input id="subtotal" type="text" /> $ Subtotal</label>
+		</div>
+		<div>
+			<label><input id="tip" type="text" /> % Tip</label>
+		</div>
+		<div>
+			<button id="btn"  onclick="calcTip();">Calculate Tip</button>
+		</div>
+		<hr />
+		<div>
+			<h2>Your total:</h2>
+			<p id="total">$0.00</p>
+		</div>
+	</body>
+    <script>
+        function calcTip() {
+            var subtotal = document.getElementById("subtotal").value;
+            var tip = document.getElementById("tip").value;
+            var total=parseFloat(subtotal)+(parseFloat(subtotal) * parseFloat(tip) / 100) ;
+            document.getElementById('total').innerText = '$' + total;
+        }
+      </script>
+</html>
