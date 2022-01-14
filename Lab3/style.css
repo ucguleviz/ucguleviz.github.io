@@ -1,0 +1,29 @@
+.mainChart{
+    color: black;
+    font-size: 8pt;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 50px;
+    min-height: 25px;
+    background-color:#99CCFF;
+    width: 400px;
+}
+
+.userSignUpHeader{
+    color: black;
+    font-weight: bold;
+    border: 1px black solid;
+    padding: 8px;
+    min-height: 15px;
+    background-color: #e8dc9b;
+    width: 150px;    
+    font-size: 12pt;
+    margin-top: -20px;
+    background-color: white;
+
+}
+.inputs{
+    position: fixed;
+    left: 150px;;
+}
