@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="icon" type="image/x-icon" href="decorated.gif" />
+    <script src="functions.js"></script>
+  </head>
+
+  <body>
+    <h1>Text Decorator</h1>
+    <div>
+      <img src="decorated.gif" />
+    </div>
+
+    <br /><br />
+    <fieldset style="width: 400px">
+      <legend>Text:</legend>
+      <textarea id="text" rows="4" cols="30"></textarea>
+    </fieldset>
+    <br /><br />
+    <fieldset style="width: 400px">
+      <legend>Decoration:</legend>
+      <button onclick="biggerDecorations()">Bigger Decorations!</button>
+      <br />
+      <br />
+      <label>
+        <input
+          type="checkbox"
+          id="bling"
+          onchange="bling()"
+          value="2"
+          name="entry"
+        />
+        Bling
+      </label>
+      <br />
+      <br />
+      <button onclick="gpayAtinlay()">Igpay Atinlay</button>
+      <br />
+      <br />
+      <button onclick="malkovitch()">Malkovitch</button>
+    </fieldset>
+  </body>
+</html>

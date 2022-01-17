@@ -1,0 +1,53 @@
+1. What is the difference between the following 2 statements?
+	setTimeout(booyah, 2000);
+	setTimeout(booyah(), 2000);
+	
+		setTimeout(booyah, 2000); -->> this is going to be load before code execution
+		setTimeout(booyah(), 2000); -->> this is going to be loaded when interpreter start to read this code line	
+
+2. What do the following 2 alerts display (answer without running the code)?
+	var myfunc = function(a, x) {
+		return a * x;
+	};
+	var x = myfunc(2, 3);
+	var y = myfunc;
+	alert(x);
+	alert(y(2,3));
+	
+	Both of them show after message as 6. First x works, after that y works.
+	
+	
+3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+	says “BOOYAH!”
+	setTimeout(booyah1, 2000);
+	setTimeout(booyah2(), 2000);
+	
+	
+	 	function booyah1() {
+      			alert("BOOYAH");
+   		}
+
+    		const booyah2 = function () {
+      			alert("BOOYAH");
+    			};
+	
+	
+4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+for using it)?
+
+	Unobtrusive Javascript is using for code seperation and improving usability. Developers need to seperate JS and HTML files, HTML files should not contain JS codes.
+	
+
+	<input type="button" id="btn" onclick="alert('Test')" />
+
+	That is not unobstrusive javascript because behaviour and presentation are mixed. The onclick shouldn't be there in html and should be part of javascript itself not html.
+	With above example, you can go unobstrusive like this:
+
+
+	HTML:
+		<input type="button" id="btn" />
+	JS:
+		var el = document.getElementById('btn');
+		el.onclick = function(){
+  			alert('Test');
+		};
